@@ -22,12 +22,28 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+require 'wechat_work'
+
+WechatWork.configure do |config|
+  config.corpid = 'your-corpid'
+  config.agentid = 'your-agentid'
+  config.agentsecret = 'your-agentsecret'
+end
+
+w = WechatWork::Wechat.new
+w.send_text_message('content', 'users id')
+```
+
++ content 为消息正文，支持`<a>`标签
++ users id 支持传入用户id数组，其中特殊值`@all`为发送消息给所有人
+
 
 ## Todo
-1. send message
-2. command line tool
-3. test
+- [x] send text message
+- [ ] command line tool
+- [ ] split wechat_work.rb
+- [ ] test
 
 ## Development
 
