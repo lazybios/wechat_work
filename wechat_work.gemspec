@@ -26,7 +26,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "rspec", "~> 3.0"
   spec.add_development_dependency "pry", "~> 0"
 
-  spec.add_dependency "rest-client", "~> 2.0"
+  spec.add_dependency "rest-client", "~> 1.8"
 
-  spec.required_ruby_version = '>= 2.0.0'
+  spec.required_ruby_version = ">= 2.0.0"
 end
